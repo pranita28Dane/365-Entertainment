@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies | 365 Entertainment</title>
+    <link rel="icon" href="images/logo.jpg" type="image/png" sizes="16x20">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="logo"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#">TV Series</a></li>
+                <li><a href="#">Audio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- carousel full display -->
+    <div class="carousel">
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        
+            <img src="images/movies2.jpg" style="width:100%">
+        
+        </div>
+        
+        <div class="mySlides fade">
+        
+            <img src="images/movies1.jpg" style="width:100%">
+        
+        </div>
+        
+        <div class="mySlides fade">
+        
+            <img src="images/movies3.jpg" style="width:100%">
+        
+        </div>
+
+        <div class="mySlides fade">
+        
+            <img src="images/movies4.jpg" style="width:100%">
+        
+        </div>
+
+        <div class="mySlides fade">
+        
+            <img src="images/movies5.jpg" style="width:100%">
+        
+        </div>
+            
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+    </div>
+
+    </div>
+
+    <section class='bar'>
+        <!-- genre option -->
+        <!-- dropdown menu -->
+    <div class="dropdown">
+        <button class="dropdown-btn" ><span id='genre-name'>Genre</span>
+            <img src="images/caret-down-solid.svg" alt="">
+        </button>
+        <div class="dropdown-list">
+            <a href="#" data-filter='all'   class='genre'>All</a>
+                <a href="#" data-filter='action'class='genre'>Action</a>
+                <a href="#" data-filter='drama' class='genre'>Drama</a>
+                <a href="#" data-filter='sci-fi' class='genre'>Sci-Fi</a>
+        </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="search">
+        <form >
+            <input type="text" placeholder="Search your favourite movie title" id='input' onkeyup="search()">
+            <button type="submit" class="searchbtn"><img src="images/search-solid.svg" alt=""></button>
+        </form>
+    
+    </div>
+    
+    </section>
+
+
+    <section >
+        
+    <div class="images " id='block'>
+
+        <div class="box">
+            <img src="images/13.jpg" alt="">
+            <div class="text">
+                <h3>Haider</h3>
+                    Indian crime tragedy film.
+                    
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/2.jpg" alt="">
+            <div class="text">
+                <h3>Gravity</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/20.jpg" alt="">
+            <div class="text">
+                <h3>Mars</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box action">
+            <img src="images/6.jpg" alt="">
+            <div class="text">
+                <h3>Bleach</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/7.jpg" alt="">
+            <div class="text">
+                <h3>Batman</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/8.jpg" alt="">
+            <div class="text">
+                <h3>Batwoman</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/s4.jpg" alt="">
+            <div class="text">
+                <h3>First Five</h3>
+                    South Korean Entertainment.
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/s5.jpg" alt="">
+            <div class="text">
+                <h3>Shrooms</h3>
+                    A Marvel Comics superhero team.
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/s6.jpg" alt="">
+            <div class="text">
+                <h3>Superman</h3>
+                    Indian comedy & Romance.
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/9.jpg" alt="">
+            <div class="text">
+                <h3>Wonder Woman</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/10.jpg" alt="">
+            <div class="text">
+                <h3>Captain Marvel</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/11.jpg" alt="">
+            <div class="text">
+                <h3>Hulk</h3>
+                A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/12.jpg" alt="">
+            <div class="text">
+                <h3>Iron-Man
+                A Marvel Comics superhero team.</h3>
+                    
+            </div>
+        </div>
+        <div class="box action ">
+            <img src="images/a1.jpg" alt="" >
+            <div class="text">
+                <h3>Last City</h3>
+                Thriller, Mystery & Comedy.
+            </div>
+        </div>
+        <div class="box action">
+            <img src="images/a2.jpg" alt="">
+            <div class="text">
+                <h3>Tomb Raider</h3>
+                    Indian crime tragedy film.
+            </div>
+        </div>
+        <div class="box action">
+            <img src="images/a3.jpg" alt="">
+            <div class="text">
+                <h3>Japanese Marvel</h3>
+                    A Marvel Comics superhero team.
+            </div>
+        </div>
+        <div class="box action">
+            <img src="images/a4.jpg" alt="">
+            <div class="text">
+                <h3>Bohemian</h3>
+                    Japanese manga series written by Tsugumi.
+            </div>
+        </div>
+        <div class="box action">
+            <img src="images/a5.jpg" alt="">
+            <div class="text">
+                <h3>Justice League</h3>
+                    2003 American martial arts film.
+                
+            </div>
+        </div>
+        <div class="box action">
+            <img src="images/a6.jpg" alt="">
+            <div class="text">
+                <h3>Borgia</h3>
+                    Indian action drama film.
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/s1.jpg" alt="">
+            <div class="text">
+                <h3> Red Wars</h3>
+                Chinese crime thriller.
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/s2.jpg" alt="">
+            <div class="text">
+                <h3>Florida</h3>
+                    Documentary eastern eravel.
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/s3.jpg" alt="">
+            <div class="text">
+                <h3>That Thing</h3>
+                    Thriller Romance Drama film.
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/d1.jpg" alt="">
+            <div class="text">
+                <h3>The Nun</h3>
+                    2016 ‧ Fantasy/Science Fiction.
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/d2.jpg" alt="">
+            <div class="text">
+                <h3>Avengers</h3>
+                    Indian crime tragedy film.
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/d3.jpg" alt="">
+            <div class="text">
+                <h3>Aquaman</h3>
+                    Thriller, Mystery & Comedy.
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/1.jpg" alt="">
+            <div class="text">
+                <h3>Martian</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/14.jpg" alt="">
+            <div class="text">
+                <h3>Dream 2</h3>
+                    Thriller, Mystery & Comedy
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/15.jpg" alt="">
+            <div class="text">
+                <h3>Batman</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/16.jpg" alt="">
+            <div class="text">
+                <h3>Monster Manav</h3>
+                    Japanese manga series written by Tsugumi.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/17.jpg" alt="">
+            <div class="text">
+                <h3>Kill Bill</h3>
+                    2003 American martial arts film.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/18.jpg" alt="">
+            <div class="text">
+                <h3>Doctor Strange</h3>
+                A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/19.jpg" alt="">
+            <div class="text">
+                <h3>Interstellar</h3>
+                A Marvel Comics superhero team
+                    
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/21.jpg" alt="">
+            <div class="text">
+                <h3>Thor</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box sci-fi">
+            <img src="images/22.jpg" alt="">
+            <div class="text">
+                <h3>Captain America</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/d4.jpg" alt="">
+            <div class="text">
+                <h3>Tomb Raider</h3>
+                    A Marvel Comics superhero team.
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/d5.jpg" alt="">
+            <div class="text">
+                <h3>FIGHTCLUB</h3>
+                    American martial arts film.
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/4.jpg" alt="">
+            <div class="text">
+                <h3>EveryThing</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/d6.jpg" alt="">
+            <div class="text">
+                <h3>Myaoekai</h3>
+                    Indian crime tragedy film.
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/23.jpg" alt="">
+            <div class="text">
+                <h3>X-Men</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+        <div class="box drama">
+            <img src="images/24.jpg" alt="">
+            <div class="text">
+                <h3>Black Widow</h3>
+                    A Marvel Comics superhero team.
+                    
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <footer>
+        <img src="images/logo.jpg" alt="">
+        <p>Powered by 365 Entertainment Portal 2022. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>
